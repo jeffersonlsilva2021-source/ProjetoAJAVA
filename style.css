@@ -48,7 +48,7 @@ body {
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
-  padding: 14px 0;
+  padding: 18px 0;
 }
 
 .brand {
@@ -58,11 +58,13 @@ body {
 }
 
 .logo {
-  width: 48px;
-  height: 48px;
+  display: block;
+  height: 64px;
+  width: auto;
+  max-width: min(320px, 55vw);
   background: var(--white);
   border-radius: 10px;
-  padding: 6px;
+  padding: 8px 14px;
   object-fit: contain;
 }
 
@@ -396,5 +398,11 @@ body {
 
   .header-content {
     justify-content: center;
+  }
+
+  .logo {
+    height: 52px;
+    max-width: min(280px, 80vw);
+    padding: 6px 12px;
   }
 }
